@@ -53,6 +53,11 @@ footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid va
 .aviso{margin:8px 0 0;font-size:14px;color:var(--ok);min-height:1em}
 .ad.aprobado{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}
 .ad.aprobado .estado{background:var(--ok-s);color:var(--ok)}
+.segm{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--oro);border-radius:10px;padding:14px 16px;margin:14px 0 4px}
+.segm-t{display:block;font:700 13px "Barlow Condensed",sans-serif;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.segm dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:0}
+.segm dt{font-weight:600;color:var(--ink)}.segm dd{margin:0;color:var(--ink2)}.segm a{color:var(--oro)}
+@media (max-width:560px){.segm dl{grid-template-columns:1fr}.segm dd{margin-bottom:6px}}
 .presu{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0 4px}
 .presu div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
 .presu b{font:700 13px "Barlow Condensed",sans-serif;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
@@ -66,6 +71,7 @@ footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid va
 <h1>Midland y Hawaii: anuncios para revisar</h1>
 <p class="lead">Los dos conjuntos entran el lunes 12 de octubre. Cada anuncio se muestra con su pieza y su texto, tal como se montaría en Meta. Los textos se pueden corregir aquí mismo y cada anuncio se aprueba con un clic.</p>
 <p class="como"><b>Presupuesto:</b> cada sede tiene su propio presupuesto y sus resultados esperados, en su pestaña. Midland va con el monto del plan de la campaña (USD 16 al día). Hawaii sube a USD 19 al día (el plan decía 17) y entra una semana antes de lo previsto, porque es la sede que más urge por la logística de la isla. Como referencia, Chicago corre a USD 20 y Dallas a USD 18.</p>
+<p class="como"><b>Segmentación:</b> la misma de Chicago y Dallas, con 25 millas alrededor de cada sede y padres de 30 a 55 años. El detalle está en la pestaña de cada sede. Los dos conjuntos ya están montados en Meta y en pausa; se encienden apenas se aprueben.</p>
 <div class="resumen">
   <div><b>Listos</b>6 anuncios por sede: video de Jesús y 5 imágenes (Hero, Coaches, Be Seen, No Trial y Juventus Way).</div>
   <div><b>Video</b>El video de Jesús de cada sede ya está editado (anuncio 2): se puede ver aquí mismo.</div>
@@ -75,9 +81,19 @@ footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid va
 <div class="tabs" role="group" aria-label="Sede"><button type="button" data-s="mid" aria-pressed="true">Midland</button><button type="button" data-s="haw" aria-pressed="false">Hawaii</button></div>
 <section id="mid" class="sede" >
   <div class="ficha"><h2>Midland</h2><p>Dec 9–11 · 5:30 PM – 8:00 PM · Diamondback Energy Sports Complex, Midland, TX</p>
-  <p class="plan">25 millas alrededor de la sede · padres de 30 a 55 años · del 12 de octubre al 9 de diciembre</p></div>
+  </div>
+  <div class="segm"><b class="segm-t">Cómo quedó configurado en Meta</b>
+    <dl>
+      <dt>Ubicación</dt><dd>Radio de <b>25 millas</b> alrededor del complejo deportivo Scharbauer / Diamondback Energy (Midland) (<a href="https://www.google.com/maps?q=31.9885844,-102.1547883" target="_blank" rel="noopener">ver el punto en el mapa</a>). Cubre Midland y Odessa completas.</dd>
+      <dt>A quién</dt><dd>Personas que viven en esa zona o que estuvieron allí hace poco.</dd>
+      <dt>Edad</dt><dd>Padres de <b>30 a 55 años</b> como público sugerido. Meta puede mostrarlo a otras edades si encuentra familias interesadas (Advantage+), igual que en Chicago y Dallas.</dd>
+      <dt>Dónde se ve</dt><dd>Solo Facebook e Instagram: feed, historias y reels.</dd>
+      <dt>Objetivo</dt><dd>Registros en la web de la sede (botón Register Now), medidos con el píxel.</dd>
+      <dt>Fechas</dt><dd>Desde que se encienda (13 de octubre) hasta el 9 de diciembre, día en que empieza el camp.</dd>
+    </dl>
+  </div>
   <div class="presu">
-    <div><b>Presupuesto</b><span class="big">USD 16 al día</span><small>58 días · unos USD 930 en total · según el plan de la campaña</small></div>
+    <div><b>Presupuesto</b><span class="big">USD 16 al día</span><small>57 días · unos USD 910 en total · según el plan de la campaña</small></div>
 
     <div><b>Niños pagados (estimado)</b><span class="big">45 a 85</span><small>con el ritmo de Chicago y Dallas este año; se revisa con datos reales al día 7</small></div>
     <div><b>Referencia</b><small class="hist">Junio de 2026: USD 797 en Meta y 82 niños pagados (68 familias).</small></div>
@@ -199,9 +215,19 @@ footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid va
 </article>
 </section><section id="haw" class="sede" hidden>
   <div class="ficha"><h2>Hawaii</h2><p>Dec 14–16 · 4:30 PM – 6:30 PM · Waipi&#x27;o Soccer Complex, Waipahu, HI</p>
-  <p class="plan">25 millas alrededor de la sede · padres de 30 a 55 años · del 12 de octubre al 14 de diciembre</p></div>
+  </div>
+  <div class="segm"><b class="segm-t">Cómo quedó configurado en Meta</b>
+    <dl>
+      <dt>Ubicación</dt><dd>Radio de <b>25 millas</b> alrededor de Waipi&#x27;o Soccer Complex (Waipahu) (<a href="https://www.google.com/maps?q=21.3721819,-157.9966806" target="_blank" rel="noopener">ver el punto en el mapa</a>). Cubre prácticamente toda la isla de Oahu: Honolulu, Pearl City, Kapolei, Mililani, Kailua y North Shore.</dd>
+      <dt>A quién</dt><dd>Personas que viven en esa zona o que estuvieron allí hace poco.</dd>
+      <dt>Edad</dt><dd>Padres de <b>30 a 55 años</b> como público sugerido. Meta puede mostrarlo a otras edades si encuentra familias interesadas (Advantage+), igual que en Chicago y Dallas.</dd>
+      <dt>Dónde se ve</dt><dd>Solo Facebook e Instagram: feed, historias y reels.</dd>
+      <dt>Objetivo</dt><dd>Registros en la web de la sede (botón Register Now), medidos con el píxel.</dd>
+      <dt>Fechas</dt><dd>Desde que se encienda (13 de octubre) hasta el 14 de diciembre, día en que empieza el camp.</dd>
+    </dl>
+  </div>
   <div class="presu">
-    <div><b>Presupuesto</b><span class="big">USD 19 al día</span><small>63 días · unos USD 1.200 en total · según el plan de la campaña</small></div>
+    <div><b>Presupuesto</b><span class="big">USD 19 al día</span><small>62 días · unos USD 1.180 en total · según el plan de la campaña</small></div>
 
     <div><b>Niños pagados (estimado)</b><span class="big">45 a 70</span><small>con el ritmo de Chicago y Dallas este año; se revisa con datos reales al día 7</small></div>
     <div><b>Referencia</b><small class="hist">Marzo de 2026: USD 653 en Meta y 37 niños pagados (33 familias). Público de la isla más pequeño: cuesta más llegar a cada familia.</small></div>
